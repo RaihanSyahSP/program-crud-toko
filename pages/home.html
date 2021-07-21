@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container w3-teal">
+        <h1>Produk Baru 2021</h1>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+        <?php
+            require("koneksi.php");
+            $sql = "SELECT * FROM barang";
+            $hasil = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_row($hasil);
+            $n = 1;
+            do {
+                list($kodebarang, $nama, $harga, $stok) = $row;
+        ?>
+            <div class="w3-third">
+                <div class="w3-card">
+                    <br>
+                    <?php
+                        echo "<center><img src = './images/$kodebarang.jpg' width=60% height=20%></center>";
+                    ?>
+                    <div class="w3-container">
+                        <?php
+                            echo "<h5>$nama <br>Rp.";
+                            echo number_format($harga,2,",",".");
+                            echo "<br>Stok : $stok</h5>";
+                            echo "<a class = 'w3-btn w3-red' href='index.php?p=belisekarang&kodebarang=$kodebarang'>Beli Sekarang</a>";
+                        ?>  
+                    </div>
+                    <br>
+                </div>
+                <br>
+            </div>
+            <?php
+            }
+            while($row = mysqli_fetch_row($hasil));
+            ?>
+    </div>
+</body>
+</html>
