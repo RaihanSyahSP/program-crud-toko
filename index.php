@@ -12,6 +12,11 @@
         <img src="./images/header.jpg" alt="" width="100%" height="30%">
     </div>
 
+    <div class="w3-bar w3-blue">
+        <a href="index.php" class="w3-bar-item w3-button">Home</a>
+        <a href="admin/index.php" class="w3-bar-item w3-button">Admin</a>
+    </div>
+
     <div id="konten">
         <?php
             $pages_dir = 'pages';

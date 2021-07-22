@@ -14,9 +14,6 @@ if($_SESSION['username']){
 }else {
 ?>
 
-
-   
-
 <div class="w3-container w3-teal">
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Login</button>
 </div>

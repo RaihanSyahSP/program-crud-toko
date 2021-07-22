@@ -42,9 +42,12 @@
             echo "<tr><td>E-Mail<td>$email";
             echo "</table>";
             echo "<hr width=320>";
-            $sql="INSERT INTO penjualan VALUES ('','$kodebarang','$jumlah_beli','$nama_pembeli',
-            '$alamat','$kota','$kode_pos','$telp','$email') ";
-            $hasil=mysqli_query($conn,$sql);
+            $sql = "INSERT INTO `penjualan` (`id`, `kodebarang`, `jumlah`, `nama_pembeli`, `alamat`, `kota`, `kode_pos`, `telp`, `email`) VALUES (NULL, '$kodebarang', '$jumlah_beli', '$nama_pembeli', '$alamat', '$kota', '$kode_pos', '$telp', '$email')";
+
+            $insert = mysqli_query($conn, $sql);
+            if(!$insert){
+                die('Terjadi kesalahan pada database');
+            }
         ?>  
     </table>
     <h1>Data Penjualan Telah Disimpan!</h1>

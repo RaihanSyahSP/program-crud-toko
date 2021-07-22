@@ -30,6 +30,7 @@
       <a href="index.php?p=updatebarang" class="w3-bar-item w3-button">Update</a>
       <a href="index.php?p=deletebarang" class="w3-bar-item w3-button">Delete</a>
       <a href="index.php?p=viewpenjualan" class="w3-bar-item w3-button">Penjualan</a>
+      <a href="index.php?p=profile" class="w3-bar-item w3-button">Profile</a>
     
       <div class="w3-dropdown-hover">
           <button class="w3-button">Dropdown</button>
@@ -39,7 +40,8 @@
             <a href="index.php?p=updatebarang" class="w3-bar-item w3-button">Update</a>
     		<a href="index.php?p=deletebarang" class="w3-bar-item w3-button">Delete</a>
     		<a href="index.php?p=viewpenjualan" class="w3-bar-item w3-button">Penjualan</a>
-    		 <a href="index.php?p=logout" class="w3-bar-item w3-button">Logout</a> 
+    		<a href="index.php?p=profile" class="w3-bar-item w3-button">Profile</a>
+    		<a href="index.php?p=logout" class="w3-bar-item w3-button">Logout</a> 
           </div>
       </div>
     </div>
