@@ -53,7 +53,7 @@ $query = mysqli_query($conn, $sql);
    <hr width="320">
    <div class="w3-panel w3-round-xxlarge w3-teal">
       <h3>
-         <center>UPDATE SUKSES DATA BARANG</center>
+         <center>UPDATE SUKSES</center>
       </h3>
    </div>
    <table>

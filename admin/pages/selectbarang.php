@@ -1,3 +1,9 @@
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
+
 <div class="w3-panel w3-round-xxlarge w3-teal">
     <h3><center>Memasukan Data Barang</center></h3>
 </div>
@@ -28,8 +34,20 @@
               <td><?php echo $barang['nama']?></td>
               <td>Rp <?php echo number_format($barang['harga'])?></td>
               <td><?php echo number_format($barang['stok'])?></td>
-              <td><center><a href="index.php?p=editbarang&kodebarang=<?php echo $barang['kodebarang']?>">Edit</a></center></td>
-              <td><center><a href="index.php?p=delete_barang&kodebarang=<?php echo $barang['kodebarang']?>">Delete</a></center></td>
+              <td>
+                  <center>
+                      <button class="w3-btn w3-light-green w3-round-xxlarge">
+                        <a href="index.php?p=editbarang&kodebarang=<?php echo $barang['kodebarang']?>">Edit</a>
+                    </button>
+                  </center>
+              </td>
+              <td >
+                  <center>
+                      <button class="w3-btn w3-red w3-round-xxlarge">
+                          <center><a href="index.php?p=delete_barang&kodebarang=<?php echo $barang['kodebarang']?>">Delete</a></center>
+                      </button>
+                  </center>
+                </td>
           </tr>
           <?php 
           $i++;

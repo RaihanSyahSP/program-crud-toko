@@ -1,7 +1,12 @@
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
+
 <div class="w3-panel w3-round-xxlarge w3-teal">
     <h3><center>Menampilkan Seluruh Data Penjualan</center></h3>
 </div>
-<hr>
 <div class="w3-container">
 
 <table class="w3-table-all">
@@ -38,7 +43,13 @@
               <td><?php echo $penjualan['kode_pos'] ?></td>
               <td><?php echo $penjualan['telp'] ?></td>
               <td><?php echo $penjualan['email'] ?></td>
-              <td><center><a href="index.php?p=deletepenjualan&id=<?php echo $penjualan['id'] ?>">Delete</a></center></td>
+              <td>
+                <center>
+                  <button class="w3-btn w3-red w3-round-xxlarge">
+                    <a href="index.php?p=deletepenjualan&id=<?php echo $penjualan['id'] ?>">Delete</a>
+                  </button>
+                </center>
+              </td>
           </tr>
         <?php 
         $i++;

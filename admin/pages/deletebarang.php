@@ -14,10 +14,10 @@
          </tbody>
       </table>
       <hr>
-      <input type="reset" value="RESET">
-      <input type="submit" value="Delete">
+      <input class="w3-button w3-green" type="reset" value="RESET">
+      <input class="w3-button w3-red" type="submit" value="DELETE">
    </form>
    <div class="w3-container w3-teal w3-margin-top">
-      <p>Masukan Kode Barang yang akan di Delete, kemudian Click Tombol Proses Delete</p>
+      <p>Masukkan Kode Barang Yang Akan Dihapus</p>
    </div>
 </center>

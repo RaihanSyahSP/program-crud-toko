@@ -33,7 +33,7 @@ if(!$delete) {
    <hr width="320">
    <div class="w3-panel w3-round-xxlarge w3-teal">
       <h3>
-         <center>Hapus DATA BARANG</center>
+         <center>HAPUS DATA BARANG</center>
       </h3>
    </div>
    <table>

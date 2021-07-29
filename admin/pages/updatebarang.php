@@ -14,10 +14,10 @@
          </tbody>
       </table>
       <hr>
-      <input type="submit" value="EDIT">
-      <input type="reset" value="RESET">
+      <input class="w3-button w3-green" type="submit" value="EDIT">
+      <input class="w3-button w3-red" type="reset" value="RESET">
    </form>
-   <div class="w3-container w3-blue w3-margin-top">
-      <p>Masukan Kode Barang yang akan di Edit, kemudian Click Tombol EDIT</p>
+   <div class="w3-container w3-teal w3-margin-top">
+      <p>Masukkan Kode Barang Yang Akan Diedit</p>
    </div>
 </center>

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="header">
-        <img src="./images/header.jpg" alt="" width="100%" height="30%">
+        <img src="./images/header.jpg" alt="" width="100%" height="300px">
     </div>
 
     <div class="w3-bar w3-blue">
